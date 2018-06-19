@@ -80,6 +80,10 @@
 			{
 				"command": "projectManager.openInNewWindow",
 				"title": "Open in New Window"
+			},
+			{
+				"command": "projectManager.remove",
+				"title": "Remove From Project List"
 			}
 		],
 		"menus": {
@@ -100,6 +104,10 @@
 				},
 				{
 					"command": "projectManager.openInNewWindow",
+					"when": "view == projectsExplorer && viewItem == ProjectNodeProject"
+				},
+				{
+					"command": "projectManager.remove",
 					"when": "view == projectsExplorer && viewItem == ProjectNodeProject"
 				}
 			]
